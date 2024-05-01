@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxt/content',
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    "@nuxt/fonts"
   ],
   runtimeConfig: {
     githubToken: process.env.GITHUB_TOKEN

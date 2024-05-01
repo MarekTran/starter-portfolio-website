@@ -5,7 +5,7 @@ const { data: posts } = await useAsyncData('posts', () =>
 </script>
 
 <template>
-    <h1 class=""text-3xl my-8>Blog Posts</h1>
+    <h1 class="text-3xl my-8">Blog Posts</h1>
         I love writing blogs about topics that interest me or sharing my thoughts on various subjects. It's a great way for me to express my ideas and connect with others who share similar interests.
         Whether it's technology, science, or any other fascinating topic, I enjoy diving deep into the subject matter and providing valuable insights to my readers.
         Through my blog posts, I aim to engage and inspire my audience, sparking meaningful discussions and encouraging them to think critically about the topics I cover.
@@ -16,7 +16,7 @@ const { data: posts } = await useAsyncData('posts', () =>
             <p class="text-gray-500">{{ post.description }}</p>
         </li>
     </ul>
-    <section class="grid md:grid-cols-3 mt-8 gap-10">
+    <section class="grid md:grid-cols-3 mt-8 gap-10 mb-2">
         <Post :posts="posts" />
     </section>
 </template>
