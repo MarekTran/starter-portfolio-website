@@ -1,4 +1,5 @@
 <script setup>
+// Uses apollo, githu
 const query = gql`
 {
   viewer {
