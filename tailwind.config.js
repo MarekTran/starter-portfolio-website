@@ -1,5 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // content: [
+  //   "./components/**/*.{js,vue,ts}",
+  //   "./layouts/**/*.vue",
+  //   "./pages/**/*.vue",
+  //   "./plugins/**/*.{js,ts}",
+  //   "./app.vue",
+  //   "./error.vue",
+  // ],
     theme: {
       extend: {
         keyframes: {
@@ -10,7 +18,7 @@ module.exports = {
           },
         },
         animation: {
-          'border-spin': 'border-spin 6s linear infinite',
+          'border-spin': 'border-spin 5s linear infinite',
         },
       },
     },

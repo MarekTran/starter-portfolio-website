@@ -44,7 +44,7 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
 </template>
 
 <style scoped>
-  h1, h2, p {
+  h1, h2, p, div {
     font-family: 'Comic Neue', cursive;
   }
 </style>
