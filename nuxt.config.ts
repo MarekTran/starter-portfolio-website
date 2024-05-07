@@ -25,5 +25,8 @@ export default defineNuxtConfig({
         httpEndpoint: 'https://api.github.com/graphql'
       }
     }
+  },
+  tailwindcss: {
+    cssPath: '~/assets/css/main.css',
   }
 })

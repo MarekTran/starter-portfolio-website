@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* Act as a border */
+  .repo-card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-200 to-slate-300;
+  }
+
+  /* Gradient */
+  .repo-card-wrapper::before {
+    background: conic-gradient(rgba(0, 0, 255, 0.4) 0deg, transparent 80deg);
+    opacity: 0; /* Hide the pseudo-element initially */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for the opacity */
+    @apply absolute left-[-150%] top-[-150%] h-[400%] w-[400%] animate-border-spin content-[''];
+  }
+  /* Show the ::before pseudo-element on hover */
+  .repo-card-wrapper:hover::before {
+    opacity: 1; /* Make pseudo-element visible on hover */
+  }
+
+  /* Body */
+  .repo-card-background {
+    @apply absolute left-[3px] top-[3px] h-[calc(100%-6px)] w-[calc(100%-6px)] rounded-2xl bg-gradient-to-b from-slate-100 to-slate-300;
+  }
+}

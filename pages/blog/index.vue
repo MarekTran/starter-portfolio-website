@@ -20,3 +20,9 @@ const { data: posts } = await useAsyncData('posts', () =>
         <Post :posts="posts" />
     </section>
 </template>
+
+<style scoped>
+  h1, h2, p, div {
+    font-family: 'Comic Neue', cursive;
+  }
+</style>

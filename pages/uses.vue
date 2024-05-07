@@ -41,3 +41,9 @@
 
   <img src="~/assets/images/windows95.png" alt="Visual Studio Code Synthwave 84 Theme" class="mt-8 mb-20" />
 </template>
+
+<style scoped>
+  h1, h2, p, div {
+    font-family: 'Comic Neue', cursive;
+  }
+</style>

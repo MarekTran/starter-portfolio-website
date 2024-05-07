@@ -34,6 +34,11 @@ const { data } = await useAsyncQuery(query);
   <p class="text-lg mb-8">Here are some of my projects on GitHub.</p>
   <section class="grid grid-cols-2 gap-10">
     <RepoCard v-for="project in data?.viewer.repositories.nodes" :key="project.id" :project="project"/>
-    
   </section>
 </template>
+
+<style scoped>
+  h1, h2, p, div {
+    font-family: 'Comic Neue', cursive;
+  }
+</style>

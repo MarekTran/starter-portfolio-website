@@ -1,12 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    theme: {
-      // backgroundImage: {
-      //   'win95-cloud-tile': "url('/assets/backgrounds/windows95-tile.png')",
-      // }
+  theme: {
+    extend: {
+      keyframes: {
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
+        },
+      },
+      animation: {
+        'border-spin': 'border-spin 6s linear infinite',
+      },
     },
-    plugins: [
-      require('@tailwindcss/typography'),
-      // ...
-    ],
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
   }
