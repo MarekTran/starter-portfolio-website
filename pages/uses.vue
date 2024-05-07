@@ -1,45 +1,42 @@
 <template>
-  <h1 class="text-3xl font-bold my-8">Uses</h1>
+  <h1 class="text-3xl font-bold my-8">Welcome to my uses page.</h1>
   <p class="text-lg">
-    I am often asked about the gear I use as a software developer and content creator. The hardware and software I use is
-    changing all the time so this page will serve as a place for an updated list. If you have a question about anything I
-    use or a suggestion for something I am missing please reach out to me on
-    <a href="https://www.twitter.com/therealdanvega" aria-label="Dan Vega on Twitter">Twitter</a>. The
-    inspiration for this page came from
-    <a href="https://wesbos.com/uses" aria-label="Wes Bos Uses">Wes Bos</a>'s uses page and has been
-    submitted to
-    <a href="https://uses.tech/" aria-label="uses.tech">uses.tech</a>.
+    You can find more uses pages at
+    <a href="https://uses.tech/" aria-label="uses.tech" class="text-blue-500">uses.tech</a>.
   </p>
 
   <h2 class="text-2xl font-bold mt-8 mb-2">This Website</h2>
   <ul class="list-disc">
-    <li class="ml-8 py-1"><a href="https://vuejs.org/">Vue 3</a></li>
-    <li class="ml-8 py-1"><a href="https://nuxt.com/">Nuxt 3</a></li>
-    <li class="ml-8 py-1"><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
-    <li class="ml-8 py-1">Hosted on <a href="https://netlify.com/">Netlify</a></li>
+    <li class="ml-8 py-1"><a href="https://vuejs.org/" class="text-blue-500">Vue 3</a></li>
+    <li class="ml-8 py-1"><a href="https://nuxt.com/" class="text-blue-500">Nuxt 3</a></li>
+    <li class="ml-8 py-1"><a href="https://tailwindcss.com/" class="text-blue-500">Tailwind CSS</a></li>
   </ul>
 
   <h2 class="text-2xl font-bold mt-8 mb-2">Editor and Terminal</h2>
   <ul class="list-disc">
-    <li class="ml-8 py-1"><a href="https://code.visualstudio.com/" aria-label="Visual Studio Code">Visual Studio Code</a>
-      is my current
-      editor and I use it for pretty much everything.
+    <li class="ml-8 py-1"><a href="https://code.visualstudio.com/" aria-label="Visual Studio Code" class="text-blue-500">Visual Studio Code</a>
+      is my current editor and I use it for pretty much everything.
     </li>
     <li class="ml-8 py-1">
       The theme I am currently using is
-      <a href="https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode"
-        aria-label="Synthwave 84 by Robb Owen">Synthwave 84</a> by Robb Owen.
+      <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme"
+        aria-label="GitHub Dark" class="text-blue-500">GitHub Dark</a>.
     </li>
     <li class="ml-8 py-1">
       Font is
-      <a href="https://sourcefoundry.org/hack/" aria-label="Hack Font">Hack</a>
+      <a href="https://dtinth.github.io/comic-mono-font/" aria-label="Comic Sans Mono" class="text-blue-500">Comic Mono</a>
     </li>
-    <li class="ml-8 py-1"><a href="https://www.iterm2.com/" aria-label="iTerm">iTerm2</a> is my
-      Terminal
+    <li class="ml-8 py-1"><a href="https://apps.microsoft.com/detail/9n8g5rfz9xk3?hl=en-US&gl=US" aria-label="Terminal Preview" class="text-blue-500">Windows Terminal Preview</a> is my
+      terminal.
     </li>
   </ul>
-
-  <img src="~/assets/images/windows95.png" alt="Visual Studio Code Synthwave 84 Theme" class="mt-8 mb-20" />
+  <h2 class="text-2xl font-bold mt-8 mb-2">Operating System</h2>
+  <img src="~assets/images/tuxvswin-small.jpg" alt="Tux penguin, Windows logo" class="mt-8 mb-20 rounded-lg shadow-lg" />
+  <ul class="list-disc">
+    <li class="ml-8 py-1">I use Windows 10 on my main machine.</li>
+    <li class="ml-8 py-1">Ubuntu 22.04 is on my home server.</li>
+    <li class="ml-8 py-1">My VMs run on Proxmox</li>
+  </ul>
 </template>
 
 <style scoped>
