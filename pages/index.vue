@@ -12,7 +12,7 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
       <h1 class="text-5xl font-bold mt-20">👋 Hi, I am Marek.</h1>
       <p class="text-base text-gray-900 p-2 italic">I like to build things.</p>
     </section>
-    <section class="flex flex-col md:flex-row">
+    <section class="flex flex-col md:flex-row gap-3">
       <div class="md:w-3/4">
           <h2 class="text-3xl font-bold mt-8">About Me</h2>
           <p class="text-lg py-2">
