@@ -16,7 +16,7 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
       <div class="md:w-3/4">
           <h2 class="text-3xl font-bold mt-8">About Me</h2>
           <p class="text-lg py-2">
-              I am a student at TU Delft studying Computer Science and Engineering. I am passionate about computer hardware, self-hosting and IoT.
+              I am studying Computer Science & Engineering at TU Delft. I am passionate about computer hardware, self-hosting and IoT.
               This website is a place to document my projects and share my journey. 
           </p>
           <p class="text-lg py-2">

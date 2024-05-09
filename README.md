@@ -1,3 +1,5 @@
+This is my modified portfolio website originally made from Net Ninja's YouTube tutorial series. Make sure to add a `GITHUB_TOKEN` environment variable to `.env` file to make GraphQL queries to GitHub.
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
