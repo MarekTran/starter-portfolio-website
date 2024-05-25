@@ -4,5 +4,5 @@ Make sure to add a `GITHUB_TOKEN` environment variable to `.env` file to make Gr
 ---
 ## Docker
 Build using `docker build -t nuxt-portfolio-site .` \
-Run using `docker run --env-file .env -d -p <host-port>:3000 nuxt-portfolio-website`.
+Run using `docker run --env-file .env -d -p <host-port>:3000 nuxt-portfolio-website`. \
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
