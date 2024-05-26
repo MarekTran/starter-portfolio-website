@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    container_name: personal-blog-nuxt
+    # image: mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
+    build:
+      context: .    
+    command: sleep infinity
+    volumes:
+      - ../..:/workspaces:cached
+    # Add your devcontainer configuration here
+
+  # nginx:
+  #   container_name: personal-blog-nginx
+  #   image: nginx:1.25.5
+  #   volumes:
+  #     - ./templates:/etc/nginx/templates
+  #     - ./conf.d:/etc/nginx/conf.d
+  #   ports:
+  #     - "80:80"
+  #   environment:
+  #     - NGINX_HOST=foobar.com
+  #     - NGINX_PORT=80
+  nginx-pm:
+    container_name: personal-blog-nginx-pm
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+    # Add your nginx-proxy-manager configuration here
+
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt

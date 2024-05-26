@@ -19,9 +19,6 @@ Overall I think for a simple blog website like this one, it is not needed, howev
 
 After dabbling with dependencies and packages on my main machine I realised that VSCode dev containers were the way to go. This has carried it's own set of problems such as hot-reload not working properly and general slow performance. 
 
-:::figure-md{imgname="comically-large-node-modules.jpg"}
-Me when npm install.
-:::
 
 One more source of confusion was that TailwindCSS was available both as a Nuxt module but it could also be used as an npm package. There are so many ways to do things, it is tought to determine which is the "best".
 

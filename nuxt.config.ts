@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts"
   ],
   runtimeConfig: {
+    // This should be set in the environment variables during deployment
     githubToken: process.env.GITHUB_TOKEN
   },
   content: {
